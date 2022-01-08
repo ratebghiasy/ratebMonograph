@@ -1,0 +1,171 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Google Sans";
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    background-color: #255BAB;
+    display: flex;
+}
+
+.left-side {
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+.right-side {
+    width: 50%;
+    height: 100%;
+}
+
+.welcome-text {
+    height: calc(100%/3);
+    display: grid;
+    place-content: center;
+}
+
+.title {
+    height: auto;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+.description {
+    height: auto;
+    font-size: 14px;
+    color: #7091C3;
+    text-align: center;
+}
+
+.user-input {
+    height: calc(100%/3);
+    display: grid;
+    place-content: center;
+    place-items: center;
+}
+
+input {
+    height: 40px;
+    width: 280px;
+    padding: 0px 15px;
+    border-radius: 10px;
+    border: none;
+    margin: 5px 0px;
+    outline: none;
+}
+
+.login-button {
+    height: 40px;
+    width: 280px;
+    border-radius: 10px;
+    background-color: #255BAB;
+    border: 1px solid #3B6CB4;
+    margin: 4% 0%;
+    text-transform: capitalize;
+    font-weight: bold;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.16);
+    color: white;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+.login-button:hover {
+    background-color: #2458A5;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.16);
+}
+
+.sign-in-button {
+    width: 80px;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    background-color: #1F4C90;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+.sign-in-button:hover {
+    background-color: #1D4888;
+}
+
+.about {
+    height: calc(100%/3);
+    width: 100%;
+    display: grid;
+    place-content: center;
+    place-items: center;
+}
+
+.developed-by {
+    width: 300px;
+    height: 40px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.me {
+    height: 40px;
+    width: auto;
+    justify-content: flex-start;
+    display: flex;
+    vertical-align: middle;
+}
+
+.me-name {
+    display: grid;
+    place-items: center;
+    font-size: 14px;
+    margin-left: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.me img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.social-media {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    place-items: center;
+    justify-content: space-between;
+}
+
+.social-media svg {
+    width: 20px;
+    height: auto;
+    fill: white;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+.social-media svg:hover {
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+}
+
+#login-tile {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
