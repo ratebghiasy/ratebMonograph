@@ -1,0 +1,116 @@
+* {
+    padding: 0px;
+    margin: 0px;
+
+    box-sizing: border-box;
+
+    font-family: "Google Sans";
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+.screenshotgallery-header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+
+.title-area {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 20px 0px;
+    margin-left: 80px;
+}
+
+#project-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #4E4E4E;
+}
+
+.close-area {
+    height: 60px;
+    padding: 10px;
+}
+
+.close-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+    background-color: white;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.close-button i {
+    fill: #255BAB;
+}
+
+.screenshot-viewer {
+    width: 100%;
+    height: 74.6%;
+    display: flex;
+}
+
+.toggle-button-area {
+    width: 70px;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.screenshot-area {
+    width: 100%;
+    text-align: center;
+}
+
+.screenshot-area img {
+    width: 880px;
+    height: 495px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+}
+
+.toggle-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+    background-color: white;
+    padding: 12px 15.6px;
+}
+
+.toggle-button i {
+    width: auto;
+    height: 16px;
+    fill: #255BAB;
+}
+
+.screenshotgallery-images-area {
+    width: 100%;
+    height: 108px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.screenshot-toggle {
+    width: auto;
+    height: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.screenshot-toggle img {
+    width: auto;
+    height: 76px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+}
