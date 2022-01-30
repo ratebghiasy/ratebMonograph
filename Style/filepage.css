@@ -15,18 +15,23 @@ body {
 .header {
     width: 100%;
     height: 70px;
+
     display: flex;
     z-index: 1;
     position: fixed;
     justify-content: space-between;
+
     background-color: white;
 }
 
 .header-logo {
     width: 70px;
     height: 100%;
+
     text-align: center;
+
     cursor: pointer;
+
     transition: ease-in-out 0.3s;
 }
 
@@ -37,40 +42,50 @@ body {
 .header-logo img {
     width: 18.78px;
     height: 25px;
+
     margin-top: 22.5px;
 }
 
 .header-navigation {
     width: 160px;
     height: 100%;
+
     display: flex;
 }
 
 .header-pages {
     width: 100%;
     height: 100%;
-    fill: #D6D6D6;
-    transition: ease-in-out 0.3s;
-    cursor: pointer;
+
     display: flex;
     align-items: center;
+
+    fill: #D6D6D6;
+
+    transition: ease-in-out 0.3s;
+
+    cursor: pointer;
 }
 
 .header-pages i {
     display: block;
-    margin: auto
+    margin: auto;
 }
 
 .header-pages:hover {
     fill: #255BAB;
+
     background-image: linear-gradient(white, #F3F6FA, white);
 }
 
 .header-profile-photo {
     width: 70px;
     height: 100%;
+
     text-align: center;
+
     cursor: pointer;
+
     transition: ease-in-out 0.3s;
 }
 
@@ -81,47 +96,61 @@ body {
 .header-profile-photo img {
     width: 30px;
     height: 30px;
+
     margin-top: 20px;
+
     border-radius: 50%;
+
     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
 }
 
 .main {
     width: 100%;
     height: auto;
-    padding-top: 100px;
+
     display: grid;
+
+    padding-top: 100px;
 }
 
 .project-info {
     width: 50%;
     height: auto;
+
     padding-left: 80px;
+
     text-align: left;
 }
 
 .title-description {
     width: 100%;
     height: auto;
+
     display: grid;
+
     margin-bottom: 20px;
 }
 
 #project-title {
     width: 500px;
+
     font-size: 40px;
     font-weight: bold;
 
     color: #4E4E4E;
+
     margin-bottom: 10px;
 }
 
 #project-description {
     width: 90%;
     height: auto;
+
     font-size: 16px;
     font-weight: normal;
+
     color: #4E4E4E;
+
     cursor: text;
 }
 
@@ -134,14 +163,18 @@ body {
 
 #small-title {
     font-size: 14px;
+
     color: #B1B1B1;
+
     margin-bottom: 10px;
 }
 
 .application-icon {
     height: 35px;
     width: 35px;
+
     display: flex;
+
     margin-right: 10px;
     margin-bottom: 20px;
 }
@@ -149,85 +182,79 @@ body {
 .designed-by {
     width: auto;
     height: auto;
+
     display: flex;
+    
     margin-top: 10px;
 }
 
 .name-email {
     width: auto;
     height: auto;
+
     display: grid;
 }
 
 .designer-photo img {
     height: 40px;
     width: 40px;
+
     margin-right: 10px;
 }
 
-.likes-comments {
+.project-actions {
     width: 100%;
-    height: auto;
+    height: 20px;
+
     display: flex;
+
     margin-top: 20px;
+}
+
+.action {
+    width: 60px;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
     cursor: pointer;
 }
 
-.like {
-    width: auto;
+.action i {
+    width: 20px;
     height: auto;
-    display: flex;
-    margin-right: 20px;
-}
 
-.like i {
-    height: 18px;
-    width: 18px;
     fill: #CACACA;
-    align-content: center;
-    margin-right: 4px;
+
     transition: ease-in-out 0.3s;
 }
 
-.like i:hover {
+.action i:hover {
     fill: #255BAB;
 }
 
-.comment {
-    width: auto;
-    height: auto;
-    display: flex;
-    transition: ease-in-out 0.3s;
-}
-
-.comment i {
-    height: 18px;
-    width: 18px;
-    fill: #CACACA;
-    align-content: center;
-    margin-right: 4px;
-    transition: ease-in-out 0.3s;
-}
-
-.comment i:hover {
-    fill: #255BAB;
-}
-
-#comment-count #like-count {
-    font-size: 16px;
+.action-text {
+    font-size: 14px;
     color: #4E4E4E;
-    text-align: left;
-    margin-right: 10px;
+
+    margin-left: 6px;
+
+    cursor: pointer;
 }
 
 .screenshots {
     width: 500px;
     height: auto;
-    gap: 10px;
+
     display: grid;
+
+    position: absolute;
+
     grid-template-columns: repeat(2);
     grid-auto-rows: 140px;
-    position: absolute;
+    gap: 10px;
+
     right: 80px;
     margin-bottom: 120px;
 }
@@ -243,10 +270,15 @@ body {
 .screenshots img {
     width: 100%;
     height: 100%;
+
     object-fit: cover;
+
     border-radius: 10px;
+
     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+
     cursor: pointer;
+
     transition: ease-in-out 0.3s;
 }
 
@@ -255,40 +287,54 @@ body {
 }
 
 .last-image-button {
-    position: relative;
     width: 100%;
+
+    position: relative;
 }
 
-.last-image-button .img-btn {  
-  position: absolute;
+.last-image-button .img-btn {
   width: 245px;
   height: 140px;
+  
+  position: absolute;
+
   text-align: center;
+
   top: 50%;
   left: 50%;
+
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+
   background-color: rgba(37, 91, 171, 0.9);
   color: white;
+
   font-size: 14px;
   font-weight: bold;
+
   border: none;
-  cursor: pointer;
   border-radius: 10px;
+
+  cursor: pointer;
+
   transition: ease-in-out 0.3s;
 }
 
 .img-btn:hover {
     box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.3);
+
     font-size: 14.5px;
 }
 
 .project-content {
     width: 100%;
     height: auto;
+
     display: grid;
+
     margin-top: 190px;
     margin-bottom: 40px;
+
     padding: 0px 80px;
 }
 
@@ -300,26 +346,36 @@ body {
 .properties {
     width: 100%;
     height: 120px;
+
     display: flex;
 }
 
 .content-info {
     width: 100%;
     height: 100%;
-    align-content: center;
+    
     display: grid;
+
+    align-content: center;
 }
 
 .content-info button {
-    border-style: none;
-    background-color: white;
-    border-radius: 10px;
-    font-weight: bold;
     height: 120px;
-    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+
     display: grid;
+
     align-content: center;
+
+    border-style: none;
+    border-radius: 10px;
+
+    background-color: white;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+
+    font-weight: bold;
+
     margin-right: 60px;
+
     cursor: pointer;
     transition: ease-in-out 0.3s;
 }
@@ -330,24 +386,31 @@ body {
 
 #project-properties {
     margin-top: -14px;
+
     font-size: 16px;
     font-weight: bold;
+
     color: #255BAB;
 }
 
 .comment-area {
     width: 100%;
     height: 320px;
+
     display: grid;
+
     padding: 20px 80px;
-    background-color: #F2F2F2;
     margin-bottom: 20px;
+
+    background-color: #F2F2F2;
 }
 
 .title-count {
     width: auto;
     height: 20px;
+    
     display: flex;
+
     margin-bottom: 10px;
 }
 
@@ -358,59 +421,77 @@ body {
 .commented {
     width: 100%;
     height: 250px;
-    top: 0px;
+
     display: flex;
+
+    top: 0px;
 }
 
 .the-comment {
     width: 300px;
     height: 100%;
+
     display: grid;
+
     margin-right: 30px;
 }
 
 .comment-box {
     width: 100%;
     height: auto;
+
     text-align: left;
     font-size: 14px;
     color: black;
+
     border-radius: 20px;
-    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+
     padding: 15px 20px;
     margin-bottom: 10px;
+
     background-color: white;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
 }
 
 .commented-by {
     width: 100%;
     height: 14px;
+
     display: flex;
 }
 
 .commented-by img {
     width: 40px;
     height: 40px;
-    border-radius: 50%;
-    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+
     margin-right: 10px;
+
+    border-radius: 50%;
+
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
 }
 
 .commenter-name-email {
     width: 100%;
     height: 100%;
+
     display: grid;
+
     font-size: 14px;
+
     margin-top: 5px;
 }
 
 .footer {
     width: 100%;
     height: 380px;
-    background-color: #255BAB;
+    
     display: flex;
     justify-content: space-between;
+
     position: relative;
+
+    background-color: #255BAB;
 }
 
 .footer img {
@@ -419,20 +500,25 @@ body {
 }
 
 .footer-info {
-    position: absolute;
-    justify-content: none;
     width: 50%;
     height: 100%;
-    padding-left: 80px;
+    
     display: grid;
+    justify-content: none;
+
+    position: absolute;
+
+    padding-left: 80px;
 }
 
 .footer-info-title {
     width: 100%;
     height: 30px;
+    
     font-size: 24px;
     font-weight: bold;
     color: white;
+
     padding-top: 87px;
     margin-bottom: 30px;
 }
@@ -440,50 +526,62 @@ body {
 .footer-info-description {
     width: 90%;
     height: auto;
+
     font: 14px;
     color: rgba(255, 255, 255, 0.8);
+
     margin-bottom: 20px;
 }
 
 .contact-info {
     width: 100%;
     height: auto;
+
     display: flex;
-    padding-bottom: 87px;
     justify-content: space-between;
+
+    padding-bottom: 87px;
 }
 
 .photo-name-email {
     width: auto;
     height: 60px;
+
     display: flex;
 }
 
 .photo-name-email img {
     width: 60px;
     height: 60px;
+
     border-radius: 50%;
     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+
     margin-right: 10px;
 }
 
 .myname-email {
     width: auto;
     height: 37px;
+
     display: grid;
+
     padding-top: 12px;
 }
 
 .myname-email label {
-    font-size: 14px;
     width: auto;
     height: 20px;
+
+    font-size: 14px;
 }
 
 .myname-email a {
     font-size: 14px;
+
     color: rgba(255, 255, 255, 0.5);
     text-decoration: none;
+    
     transition: ease-in-out 0.3s;
 }
 
@@ -494,14 +592,18 @@ body {
 .mysocial-media {
     width: 48px;
     height: 16px;
-    margin-top: 22px;
+    
     display: flex;
     justify-content: space-between;
+
+    margin-top: 22px;
 }
 
 .mysocial-media i {
     fill: white;
+
     cursor: pointer;
+    
     transition: ease-in-out 0.3s;
 }
 

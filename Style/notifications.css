@@ -1,0 +1,281 @@
+* {
+    padding: 0px;
+    margin: 0px;
+
+    box-sizing: border-box;
+
+    font-family: "Google Sans";
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+img {
+    user-select: none;
+}
+
+.header {
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    justify-content: space-between;
+
+    position: fixed;
+
+    z-index: 99;
+
+    background-color: white;
+}
+
+.header-logo {
+    width: 70px;
+    height: 100%;
+
+    text-align: center;
+
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+.header-logo:hover {
+    background-color: #F3F6FA;
+}
+
+.header-logo img {
+    width: 18.78px;
+    height: 25px;
+
+    margin-top: 22.5px;
+}
+
+.header-navigation {
+    width: 160px;
+    height: 100%;
+
+    display: flex;
+}
+
+.header-pages {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
+    fill: #D6D6D6;
+
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+.header-pages i {
+    display: block;
+
+    margin: auto
+}
+
+.header-pages:hover {
+    fill: #255BAB;
+    background-image: linear-gradient(white, #F3F6FA, white);
+}
+
+
+#notification {
+    position: inherit;
+
+    z-index: 4;
+}
+
+.header-profile-photo {
+    width: 70px;
+    height: 100%;
+
+    text-align: center;
+
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+.header-profile-photo:hover {
+    background-color: #F3F6FA;
+}
+
+.header-profile-photo img {
+    width: 30px;
+    height: 30px;
+
+    margin-top: 20px;
+
+    border-radius: 50%;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+}
+
+.overlay-shade {
+    width: 100%;
+    height: 100%;
+    
+    position: fixed;
+    z-index: 1;
+
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: ease-in-out 0.3s;
+}
+
+.notification-container {
+    width: 100%;
+    height: 396px;
+
+    display: flex;
+    justify-content: space-around;
+
+    margin-top: 80px;
+
+    position: fixed;
+    z-index: 2;
+
+    opacity: 0;
+    visibility: none;
+
+    transition: ease-in-out 0.3s;
+}
+
+.notification-popup {
+    width: 340px;
+    height: auto;
+    
+    position: fixed;
+    z-index: 3;
+
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.16);
+}
+
+body.notify .header-logo, 
+body.notify .header-profile-photo {
+    opacity: 0.5;
+    user-select: none;
+    visibility: none;
+}
+
+body.notify .header-pages:nth-child(2) {
+    fill: #255BAB;
+}
+
+body.notify .notification-container {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup-title {
+    width: 100%;
+    height: 50px;
+
+    text-align: center;
+
+    padding: 16px 0px;
+
+    font-size: 14px;
+    font-weight: bold;
+    color: #4E4E4E;
+}
+
+.the-notification {
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0px 20px;
+
+    transition: ease-in-out 0.3s;
+
+    cursor: pointer;
+}
+
+.user-action {
+    width: auto;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+.the-notification img {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 20px;
+
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+
+    margin-right: 10px;
+}
+
+.the-notification:hover {
+    background-color: #E8EEF7;
+}
+
+.notification-by-action {
+    display: grid;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+.primary-text {
+    font-weight: bold;
+
+    color: #4E4E4E;
+    
+    cursor: pointer;
+}
+
+.secondary-text {
+    color: #B1B1B1;
+
+    cursor: pointer;
+}
+
+.notification-date {
+    font-size: 14px;
+
+    color: #B1B1B1;
+
+    cursor: pointer;
+
+    right: 0px;
+}
+
+.notification-seemore-btn {
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    border-radius: 0px 0px 10px 10px;
+
+    font-size: 14px;
+    font-weight: bold;
+    color: #255BAB;
+
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+.notification-seemore-btn:hover {
+    background-color: #255BAB;
+    color: white;
+}
+
+.notification-seemore-btn label {
+    cursor: pointer;
+}
