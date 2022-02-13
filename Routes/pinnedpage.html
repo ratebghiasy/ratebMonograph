@@ -1,0 +1,536 @@
+<DOCTYPE! html>
+    <html>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/Style/pinnedpage.css">
+        <script src="/JavaScript/notificationPopup.js" defer></script>
+        <title>Pinned</title>
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="header-logo" title="Home">
+                <img src="/Resources/img/header-logo.png">
+            </div>
+            <div class="header-navigation">
+                <div class="header-pages" title="Home">
+                    <i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15.545" viewBox="0 0 18 15.545">
+                            <path id="Path_135" data-name="Path 135"
+                                d="M13,8a.815.815,0,0,0-.582.243l-8.252,7.2a.409.409,0,0,0,.243.738H6.455v6.545a.82.82,0,0,0,.818.818h3.273a.82.82,0,0,0,.818-.818V17.818h3.273v4.909a.82.82,0,0,0,.818.818h3.273a.82.82,0,0,0,.818-.818V16.182h2.045a.409.409,0,0,0,.243-.738L13.588,8.249s0-.006-.006-.006A.815.815,0,0,0,13,8Z"
+                                transform="translate(-4 -8)" />
+                        </svg>
+                    </i>
+                </div>
+                <div class="header-pages" title="Notifications">
+                    <i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14.4" height="18" viewBox="0 0 14.4 18">
+                            <path id="Path_138" data-name="Path 138"
+                                d="M23.2,8a1.35,1.35,0,0,0-1.35,1.35v.626A5.4,5.4,0,0,0,17.8,15.2v5.4l-1.382,1.041h0A.9.9,0,0,0,16.9,23.3H29.5a.9.9,0,0,0,.482-1.659L28.6,20.6V15.2a5.4,5.4,0,0,0-4.05-5.224V9.35A1.35,1.35,0,0,0,23.2,8ZM21.4,24.2a1.8,1.8,0,0,0,3.6,0Z"
+                                transform="translate(-16 -8)" />
+                        </svg>
+                    </i>
+                </div>
+                <div class="header-pages" title="Pinned">
+                    <i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                            <path id="Path_141" data-name="Path 141"
+                                d="M23.166,9.969a.97.97,0,0,0-.676,1.668l.581.581L17.04,17.05l-.953-.954a.958.958,0,0,0-.695-.293.97.97,0,0,0-.68,1.668l3.209,3.21-5.643,5.645a.961.961,0,0,0,1.36,1.36l5.643-5.645,3.209,3.21a.972.972,0,1,0,1.375-1.375L22.995,23l4.766-6.093.562.562A.972.972,0,1,0,29.7,16.1l-5.833-5.835A.961.961,0,0,0,23.166,9.969Z"
+                                transform="translate(-11.996 -9.969)" />
+                        </svg>
+                    </i>
+                </div>
+                <div class="header-pages" title="Profile">
+                    <i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                            <path id="Path_136" data-name="Path 136"
+                                d="M21,12a4,4,0,1,0,4,4A4,4,0,0,0,21,12Zm0,11c-3,0-9,1.508-9,4.5V29a1,1,0,0,0,1,1H29a1,1,0,0,0,1-1V27.5C30,24.508,24,23,21,23Z"
+                                transform="translate(-12 -12)" />
+                        </svg>
+
+                    </i>
+                </div>
+            </div>
+            <div class="header-profile-photo" title="Profile">
+                <img src="/Resources/img/user_photo.jpg">
+            </div>
+        </div>
+        <div class="pinned-page-intro-area">
+            <div class="pinned-page-title-description">
+                <label id="pinned-title">Pinned posts!</label>
+                <label id="pinned-description">Here you can see the posts you have pinned.</label>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card-container">
+                <img class="card-cover" src="/Resources/img/1.jpg">
+                <div class="card-details">
+                    <div class="menu-btn" title="More">
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.111 14">
+                                <g id="surface1" transform="translate(-40 -12)">
+                                    <path id="Path_144" data-name="Path 144"
+                                        d="M41.556,12a1.556,1.556,0,1,0,1.556,1.556A1.555,1.555,0,0,0,41.556,12Zm0,5.444A1.556,1.556,0,1,0,43.111,19,1.555,1.555,0,0,0,41.556,17.444Zm0,5.444a1.556,1.556,0,1,0,1.556,1.556A1.555,1.555,0,0,0,41.556,22.889Z" />
+                                </g>
+                            </svg>
+                        </i>
+                    </div>
+                    <div class="project-actions">
+                        <div class="project-statistics">
+                            <div class="project-statistics-counts">
+                                <label class="count">14</label>
+                                <label class="text">Likes</label>
+                            </div>
+                            <div class="project-statistics-counts">
+                                <label class="count">8</label>
+                                <label class="text">Comments</label>
+                            </div>
+                        </div>
+                        <div class="project-action-btns">
+                            <div class="project-action-btn" title="Like">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.715 10.555">
+                                        <path id="Path_56" data-name="Path 56"
+                                            d="M16.352,12a3.511,3.511,0,0,0-2.494,1.222A3.511,3.511,0,0,0,11.364,12,3.259,3.259,0,0,0,8.65,13.354c-2.261,2.989,2.023,6.488,3.03,7.426.6.563,1.346,1.231,1.792,1.625a.575.575,0,0,0,.773,0c.444-.394,1.188-1.062,1.792-1.625,1.007-.938,5.291-4.437,3.028-7.426A3.252,3.252,0,0,0,16.352,12Z"
+                                            transform="translate(-8 -11.999)" />
+                                    </svg>
+                                </i>
+                            </div>
+                            <div class="project-action-btn" title="Comment">
+                                <i><svg id="surface1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.715 10.814">
+                                        <path id="Path_55" data-name="Path 55"
+                                            d="M37.436,47.367c-3.235,0-5.858,2.22-5.858,4.957a4.506,4.506,0,0,0,1.355,3.168,2.1,2.1,0,0,1-.834,2.3.229.229,0,0,0-.07.164.225.225,0,0,0,.225.225.244.244,0,0,0,.049-.005,6,6,0,0,0,3.08-1.214,6.788,6.788,0,0,0,2.052.319c3.235,0,5.858-2.22,5.858-4.957S40.671,47.367,37.436,47.367Z"
+                                            transform="translate(-31.578 -47.367)" />
+                                    </svg></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <label class="primary-title">Project Title</label>
+                <label class="secondary-title">Name Surname</label>
+            </div>
+            <div class="card-container">
+                <img class="card-cover" src="/Resources/img/2.jpg">
+                <div class="card-details">
+                    <div class="menu-btn" title="More">
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.111 14">
+                                <g id="surface1" transform="translate(-40 -12)">
+                                    <path id="Path_144" data-name="Path 144"
+                                        d="M41.556,12a1.556,1.556,0,1,0,1.556,1.556A1.555,1.555,0,0,0,41.556,12Zm0,5.444A1.556,1.556,0,1,0,43.111,19,1.555,1.555,0,0,0,41.556,17.444Zm0,5.444a1.556,1.556,0,1,0,1.556,1.556A1.555,1.555,0,0,0,41.556,22.889Z" />
+                                </g>
+                            </svg>
+                        </i>
+                    </div>
+                    <div class="project-actions">
+                        <div class="project-statistics">
+                            <div class="project-statistics-counts">
+                                <label class="count">14</label>
+                                <label class="text">Likes</label>
+                            </div>
+                            <div class="project-statistics-counts">
+                                <label class="count">8</label>
+                                <label class="text">Comments</label>
+                            </div>
+                        </div>
+                        <div class="project-action-btns">
+                            <div class="project-action-btn" title="Like">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.715 10.555">
+                                        <path id="Path_56" data-name="Path 56"
+                                            d="M16.352,12a3.511,3.511,0,0,0-2.494,1.222A3.511,3.511,0,0,0,11.364,12,3.259,3.259,0,0,0,8.65,13.354c-2.261,2.989,2.023,6.488,3.03,7.426.6.563,1.346,1.231,1.792,1.625a.575.575,0,0,0,.773,0c.444-.394,1.188-1.062,1.792-1.625,1.007-.938,5.291-4.437,3.028-7.426A3.252,3.252,0,0,0,16.352,12Z"
+                                            transform="translate(-8 -11.999)" />
+                                    </svg>
+                                </i>
+                            </div>
+                            <div class="project-action-btn" title="Comment">
+                                <i><svg id="surface1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.715 10.814">
+                                        <path id="Path_55" data-name="Path 55"
+                                            d="M37.436,47.367c-3.235,0-5.858,2.22-5.858,4.957a4.506,4.506,0,0,0,1.355,3.168,2.1,2.1,0,0,1-.834,2.3.229.229,0,0,0-.07.164.225.225,0,0,0,.225.225.244.244,0,0,0,.049-.005,6,6,0,0,0,3.08-1.214,6.788,6.788,0,0,0,2.052.319c3.235,0,5.858-2.22,5.858-4.957S40.671,47.367,37.436,47.367Z"
+                                            transform="translate(-31.578 -47.367)" />
+                                    </svg></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <label class="primary-title">Project Title</label>
+                <label class="secondary-title">Name Surname</label>
+            </div>
+            <div class="card-container">
+                <img class="card-cover" src="/Resources/img/3.jpg">
+                <div class="card-details">
+                    <div class="menu-btn" title="More">
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.111 14">
+                                <g id="surface1" transform="translate(-40 -12)">
+                                    <path id="Path_144" data-name="Path 144"
+                                        d="M41.556,12a1.556,1.556,0,1,0,1.556,1.556A1.555,1.555,0,0,0,41.556,12Zm0,5.444A1.556,1.556,0,1,0,43.111,19,1.555,1.555,0,0,0,41.556,17.444Zm0,5.444a1.556,1.556,0,1,0,1.556,1.556A1.555,1.555,0,0,0,41.556,22.889Z" />
+                                </g>
+                            </svg>
+                        </i>
+                    </div>
+                    <div class="project-actions">
+                        <div class="project-statistics">
+                            <div class="project-statistics-counts">
+                                <label class="count">14</label>
+                                <label class="text">Likes</label>
+                            </div>
+                            <div class="project-statistics-counts">
+                                <label class="count">8</label>
+                                <label class="text">Comments</label>
+                            </div>
+                        </div>
+                        <div class="project-action-btns">
+                            <div class="project-action-btn" title="Like">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.715 10.555">
+                                        <path id="Path_56" data-name="Path 56"
+                                            d="M16.352,12a3.511,3.511,0,0,0-2.494,1.222A3.511,3.511,0,0,0,11.364,12,3.259,3.259,0,0,0,8.65,13.354c-2.261,2.989,2.023,6.488,3.03,7.426.6.563,1.346,1.231,1.792,1.625a.575.575,0,0,0,.773,0c.444-.394,1.188-1.062,1.792-1.625,1.007-.938,5.291-4.437,3.028-7.426A3.252,3.252,0,0,0,16.352,12Z"
+                                            transform="translate(-8 -11.999)" />
+                                    </svg>
+                                </i>
+                            </div>
+                            <div class="project-action-btn" title="Comment">
+                                <i><svg id="surface1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.715 10.814">
+                                        <path id="Path_55" data-name="Path 55"
+                                            d="M37.436,47.367c-3.235,0-5.858,2.22-5.858,4.957a4.506,4.506,0,0,0,1.355,3.168,2.1,2.1,0,0,1-.834,2.3.229.229,0,0,0-.07.164.225.225,0,0,0,.225.225.244.244,0,0,0,.049-.005,6,6,0,0,0,3.08-1.214,6.788,6.788,0,0,0,2.052.319c3.235,0,5.858-2.22,5.858-4.957S40.671,47.367,37.436,47.367Z"
+                                            transform="translate(-31.578 -47.367)" />
+                                    </svg></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <label class="primary-title">Project Title</label>
+                <label class="secondary-title">Name Surname</label>
+            </div>
+            <div class="card-container">
+                <img class="card-cover" src="/Resources/img/4.jpg">
+                <div class="card-details">
+                    <div class="menu-btn" title="More">
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.111 14">
+                                <g id="surface1" transform="translate(-40 -12)">
+                                    <path id="Path_144" data-name="Path 144"
+                                        d="M41.556,12a1.556,1.556,0,1,0,1.556,1.556A1.555,1.555,0,0,0,41.556,12Zm0,5.444A1.556,1.556,0,1,0,43.111,19,1.555,1.555,0,0,0,41.556,17.444Zm0,5.444a1.556,1.556,0,1,0,1.556,1.556A1.555,1.555,0,0,0,41.556,22.889Z" />
+                                </g>
+                            </svg>
+                        </i>
+                    </div>
+                    <div class="project-actions">
+                        <div class="project-statistics">
+                            <div class="project-statistics-counts">
+                                <label class="count">14</label>
+                                <label class="text">Likes</label>
+                            </div>
+                            <div class="project-statistics-counts">
+                                <label class="count">8</label>
+                                <label class="text">Comments</label>
+                            </div>
+                        </div>
+                        <div class="project-action-btns">
+                            <div class="project-action-btn" title="Like">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.715 10.555">
+                                        <path id="Path_56" data-name="Path 56"
+                                            d="M16.352,12a3.511,3.511,0,0,0-2.494,1.222A3.511,3.511,0,0,0,11.364,12,3.259,3.259,0,0,0,8.65,13.354c-2.261,2.989,2.023,6.488,3.03,7.426.6.563,1.346,1.231,1.792,1.625a.575.575,0,0,0,.773,0c.444-.394,1.188-1.062,1.792-1.625,1.007-.938,5.291-4.437,3.028-7.426A3.252,3.252,0,0,0,16.352,12Z"
+                                            transform="translate(-8 -11.999)" />
+                                    </svg>
+                                </i>
+                            </div>
+                            <div class="project-action-btn" title="Comment">
+                                <i><svg id="surface1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.715 10.814">
+                                        <path id="Path_55" data-name="Path 55"
+                                            d="M37.436,47.367c-3.235,0-5.858,2.22-5.858,4.957a4.506,4.506,0,0,0,1.355,3.168,2.1,2.1,0,0,1-.834,2.3.229.229,0,0,0-.07.164.225.225,0,0,0,.225.225.244.244,0,0,0,.049-.005,6,6,0,0,0,3.08-1.214,6.788,6.788,0,0,0,2.052.319c3.235,0,5.858-2.22,5.858-4.957S40.671,47.367,37.436,47.367Z"
+                                            transform="translate(-31.578 -47.367)" />
+                                    </svg></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <label class="primary-title">Project Title</label>
+                <label class="secondary-title">Name Surname</label>
+            </div>
+            <div class="card-container">
+                <img class="card-cover" src="/Resources/img/5.jpg">
+                <div class="card-details">
+                    <div class="menu-btn" title="More">
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.111 14">
+                                <g id="surface1" transform="translate(-40 -12)">
+                                    <path id="Path_144" data-name="Path 144"
+                                        d="M41.556,12a1.556,1.556,0,1,0,1.556,1.556A1.555,1.555,0,0,0,41.556,12Zm0,5.444A1.556,1.556,0,1,0,43.111,19,1.555,1.555,0,0,0,41.556,17.444Zm0,5.444a1.556,1.556,0,1,0,1.556,1.556A1.555,1.555,0,0,0,41.556,22.889Z" />
+                                </g>
+                            </svg>
+                        </i>
+                    </div>
+                    <div class="project-actions">
+                        <div class="project-statistics">
+                            <div class="project-statistics-counts">
+                                <label class="count">14</label>
+                                <label class="text">Likes</label>
+                            </div>
+                            <div class="project-statistics-counts">
+                                <label class="count">8</label>
+                                <label class="text">Comments</label>
+                            </div>
+                        </div>
+                        <div class="project-action-btns">
+                            <div class="project-action-btn" title="Like">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.715 10.555">
+                                        <path id="Path_56" data-name="Path 56"
+                                            d="M16.352,12a3.511,3.511,0,0,0-2.494,1.222A3.511,3.511,0,0,0,11.364,12,3.259,3.259,0,0,0,8.65,13.354c-2.261,2.989,2.023,6.488,3.03,7.426.6.563,1.346,1.231,1.792,1.625a.575.575,0,0,0,.773,0c.444-.394,1.188-1.062,1.792-1.625,1.007-.938,5.291-4.437,3.028-7.426A3.252,3.252,0,0,0,16.352,12Z"
+                                            transform="translate(-8 -11.999)" />
+                                    </svg>
+                                </i>
+                            </div>
+                            <div class="project-action-btn" title="Comment">
+                                <i><svg id="surface1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.715 10.814">
+                                        <path id="Path_55" data-name="Path 55"
+                                            d="M37.436,47.367c-3.235,0-5.858,2.22-5.858,4.957a4.506,4.506,0,0,0,1.355,3.168,2.1,2.1,0,0,1-.834,2.3.229.229,0,0,0-.07.164.225.225,0,0,0,.225.225.244.244,0,0,0,.049-.005,6,6,0,0,0,3.08-1.214,6.788,6.788,0,0,0,2.052.319c3.235,0,5.858-2.22,5.858-4.957S40.671,47.367,37.436,47.367Z"
+                                            transform="translate(-31.578 -47.367)" />
+                                    </svg></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <label class="primary-title">Project Title</label>
+                <label class="secondary-title">Name Surname</label>
+            </div>
+            <div class="card-container">
+                <img class="card-cover" src="/Resources/img/6.jpg">
+                <div class="card-details">
+                    <div class="menu-btn" title="More">
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.111 14">
+                                <g id="surface1" transform="translate(-40 -12)">
+                                    <path id="Path_144" data-name="Path 144"
+                                        d="M41.556,12a1.556,1.556,0,1,0,1.556,1.556A1.555,1.555,0,0,0,41.556,12Zm0,5.444A1.556,1.556,0,1,0,43.111,19,1.555,1.555,0,0,0,41.556,17.444Zm0,5.444a1.556,1.556,0,1,0,1.556,1.556A1.555,1.555,0,0,0,41.556,22.889Z" />
+                                </g>
+                            </svg>
+                        </i>
+                    </div>
+                    <div class="project-actions">
+                        <div class="project-statistics">
+                            <div class="project-statistics-counts">
+                                <label class="count">14</label>
+                                <label class="text">Likes</label>
+                            </div>
+                            <div class="project-statistics-counts">
+                                <label class="count">8</label>
+                                <label class="text">Comments</label>
+                            </div>
+                        </div>
+                        <div class="project-action-btns">
+                            <div class="project-action-btn" title="Like">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.715 10.555">
+                                        <path id="Path_56" data-name="Path 56"
+                                            d="M16.352,12a3.511,3.511,0,0,0-2.494,1.222A3.511,3.511,0,0,0,11.364,12,3.259,3.259,0,0,0,8.65,13.354c-2.261,2.989,2.023,6.488,3.03,7.426.6.563,1.346,1.231,1.792,1.625a.575.575,0,0,0,.773,0c.444-.394,1.188-1.062,1.792-1.625,1.007-.938,5.291-4.437,3.028-7.426A3.252,3.252,0,0,0,16.352,12Z"
+                                            transform="translate(-8 -11.999)" />
+                                    </svg>
+                                </i>
+                            </div>
+                            <div class="project-action-btn" title="Comment">
+                                <i><svg id="surface1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.715 10.814">
+                                        <path id="Path_55" data-name="Path 55"
+                                            d="M37.436,47.367c-3.235,0-5.858,2.22-5.858,4.957a4.506,4.506,0,0,0,1.355,3.168,2.1,2.1,0,0,1-.834,2.3.229.229,0,0,0-.07.164.225.225,0,0,0,.225.225.244.244,0,0,0,.049-.005,6,6,0,0,0,3.08-1.214,6.788,6.788,0,0,0,2.052.319c3.235,0,5.858-2.22,5.858-4.957S40.671,47.367,37.436,47.367Z"
+                                            transform="translate(-31.578 -47.367)" />
+                                    </svg></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <label class="primary-title">Project Title</label>
+                <label class="secondary-title">Name Surname</label>
+            </div>
+            <div class="card-container">
+                <img class="card-cover" src="/Resources/img/7.jpg">
+                <div class="card-details">
+                    <div class="menu-btn" title="More">
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.111 14">
+                                <g id="surface1" transform="translate(-40 -12)">
+                                    <path id="Path_144" data-name="Path 144"
+                                        d="M41.556,12a1.556,1.556,0,1,0,1.556,1.556A1.555,1.555,0,0,0,41.556,12Zm0,5.444A1.556,1.556,0,1,0,43.111,19,1.555,1.555,0,0,0,41.556,17.444Zm0,5.444a1.556,1.556,0,1,0,1.556,1.556A1.555,1.555,0,0,0,41.556,22.889Z" />
+                                </g>
+                            </svg>
+                        </i>
+                    </div>
+                    <div class="project-actions">
+                        <div class="project-statistics">
+                            <div class="project-statistics-counts">
+                                <label class="count">14</label>
+                                <label class="text">Likes</label>
+                            </div>
+                            <div class="project-statistics-counts">
+                                <label class="count">8</label>
+                                <label class="text">Comments</label>
+                            </div>
+                        </div>
+                        <div class="project-action-btns">
+                            <div class="project-action-btn" title="Like">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.715 10.555">
+                                        <path id="Path_56" data-name="Path 56"
+                                            d="M16.352,12a3.511,3.511,0,0,0-2.494,1.222A3.511,3.511,0,0,0,11.364,12,3.259,3.259,0,0,0,8.65,13.354c-2.261,2.989,2.023,6.488,3.03,7.426.6.563,1.346,1.231,1.792,1.625a.575.575,0,0,0,.773,0c.444-.394,1.188-1.062,1.792-1.625,1.007-.938,5.291-4.437,3.028-7.426A3.252,3.252,0,0,0,16.352,12Z"
+                                            transform="translate(-8 -11.999)" />
+                                    </svg>
+                                </i>
+                            </div>
+                            <div class="project-action-btn" title="Comment">
+                                <i><svg id="surface1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.715 10.814">
+                                        <path id="Path_55" data-name="Path 55"
+                                            d="M37.436,47.367c-3.235,0-5.858,2.22-5.858,4.957a4.506,4.506,0,0,0,1.355,3.168,2.1,2.1,0,0,1-.834,2.3.229.229,0,0,0-.07.164.225.225,0,0,0,.225.225.244.244,0,0,0,.049-.005,6,6,0,0,0,3.08-1.214,6.788,6.788,0,0,0,2.052.319c3.235,0,5.858-2.22,5.858-4.957S40.671,47.367,37.436,47.367Z"
+                                            transform="translate(-31.578 -47.367)" />
+                                    </svg></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <label class="primary-title">Project Title</label>
+                <label class="secondary-title">Name Surname</label>
+            </div>
+            <div class="card-container">
+                <img class="card-cover" src="/Resources/img/8.jpg">
+                <div class="card-details">
+                    <div class="menu-btn" title="More">
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.111 14">
+                                <g id="surface1" transform="translate(-40 -12)">
+                                    <path id="Path_144" data-name="Path 144"
+                                        d="M41.556,12a1.556,1.556,0,1,0,1.556,1.556A1.555,1.555,0,0,0,41.556,12Zm0,5.444A1.556,1.556,0,1,0,43.111,19,1.555,1.555,0,0,0,41.556,17.444Zm0,5.444a1.556,1.556,0,1,0,1.556,1.556A1.555,1.555,0,0,0,41.556,22.889Z" />
+                                </g>
+                            </svg>
+                        </i>
+                    </div>
+                    <div class="project-actions">
+                        <div class="project-statistics">
+                            <div class="project-statistics-counts">
+                                <label class="count">14</label>
+                                <label class="text">Likes</label>
+                            </div>
+                            <div class="project-statistics-counts">
+                                <label class="count">8</label>
+                                <label class="text">Comments</label>
+                            </div>
+                        </div>
+                        <div class="project-action-btns">
+                            <div class="project-action-btn" title="Like">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.715 10.555">
+                                        <path id="Path_56" data-name="Path 56"
+                                            d="M16.352,12a3.511,3.511,0,0,0-2.494,1.222A3.511,3.511,0,0,0,11.364,12,3.259,3.259,0,0,0,8.65,13.354c-2.261,2.989,2.023,6.488,3.03,7.426.6.563,1.346,1.231,1.792,1.625a.575.575,0,0,0,.773,0c.444-.394,1.188-1.062,1.792-1.625,1.007-.938,5.291-4.437,3.028-7.426A3.252,3.252,0,0,0,16.352,12Z"
+                                            transform="translate(-8 -11.999)" />
+                                    </svg>
+                                </i>
+                            </div>
+                            <div class="project-action-btn" title="Comment">
+                                <i><svg id="surface1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.715 10.814">
+                                        <path id="Path_55" data-name="Path 55"
+                                            d="M37.436,47.367c-3.235,0-5.858,2.22-5.858,4.957a4.506,4.506,0,0,0,1.355,3.168,2.1,2.1,0,0,1-.834,2.3.229.229,0,0,0-.07.164.225.225,0,0,0,.225.225.244.244,0,0,0,.049-.005,6,6,0,0,0,3.08-1.214,6.788,6.788,0,0,0,2.052.319c3.235,0,5.858-2.22,5.858-4.957S40.671,47.367,37.436,47.367Z"
+                                            transform="translate(-31.578 -47.367)" />
+                                    </svg></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <label class="primary-title">Project Title</label>
+                <label class="secondary-title">Name Surname</label>
+            </div>
+            <div class="card-container">
+                <img class="card-cover" src="/Resources/img/9.jpg">
+                <div class="card-details">
+                    <div class="menu-btn" title="More">
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.111 14">
+                                <g id="surface1" transform="translate(-40 -12)">
+                                    <path id="Path_144" data-name="Path 144"
+                                        d="M41.556,12a1.556,1.556,0,1,0,1.556,1.556A1.555,1.555,0,0,0,41.556,12Zm0,5.444A1.556,1.556,0,1,0,43.111,19,1.555,1.555,0,0,0,41.556,17.444Zm0,5.444a1.556,1.556,0,1,0,1.556,1.556A1.555,1.555,0,0,0,41.556,22.889Z" />
+                                </g>
+                            </svg>
+                        </i>
+                    </div>
+                    <div class="project-actions">
+                        <div class="project-statistics">
+                            <div class="project-statistics-counts">
+                                <label class="count">14</label>
+                                <label class="text">Likes</label>
+                            </div>
+                            <div class="project-statistics-counts">
+                                <label class="count">8</label>
+                                <label class="text">Comments</label>
+                            </div>
+                        </div>
+                        <div class="project-action-btns">
+                            <div class="project-action-btn" title="Like">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.715 10.555">
+                                        <path id="Path_56" data-name="Path 56"
+                                            d="M16.352,12a3.511,3.511,0,0,0-2.494,1.222A3.511,3.511,0,0,0,11.364,12,3.259,3.259,0,0,0,8.65,13.354c-2.261,2.989,2.023,6.488,3.03,7.426.6.563,1.346,1.231,1.792,1.625a.575.575,0,0,0,.773,0c.444-.394,1.188-1.062,1.792-1.625,1.007-.938,5.291-4.437,3.028-7.426A3.252,3.252,0,0,0,16.352,12Z"
+                                            transform="translate(-8 -11.999)" />
+                                    </svg>
+                                </i>
+                            </div>
+                            <div class="project-action-btn" title="Comment">
+                                <i><svg id="surface1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.715 10.814">
+                                        <path id="Path_55" data-name="Path 55"
+                                            d="M37.436,47.367c-3.235,0-5.858,2.22-5.858,4.957a4.506,4.506,0,0,0,1.355,3.168,2.1,2.1,0,0,1-.834,2.3.229.229,0,0,0-.07.164.225.225,0,0,0,.225.225.244.244,0,0,0,.049-.005,6,6,0,0,0,3.08-1.214,6.788,6.788,0,0,0,2.052.319c3.235,0,5.858-2.22,5.858-4.957S40.671,47.367,37.436,47.367Z"
+                                            transform="translate(-31.578 -47.367)" />
+                                    </svg></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <label class="primary-title">Project Title</label>
+                <label class="secondary-title">Name Surname</label>
+            </div>
+        </div>
+        <div class="see-more">
+            <div class="see-more-btn">
+                <label id="see-more-text">See More</label>
+            </div>
+        </div>
+        <div class="footer">
+            <img src="/Resources/img/footer_left.jpg">
+            <img src="/Resources/img/footer_right.jpg">
+            <div class="footer-info">
+                <label class="footer-info-title">What's this website about?</label>
+                <label class="footer-info-description">But I must explain to you how all this mistaken idea of
+                    denouncing pleasure and praising pain was born and I will give you a complete account of the
+                    system, and expound the actual teachings of the great explorer of the truth, the master-builder
+                    of human happiness.</label>
+                <div class="contact-info">
+                    <div class="photo-name-email">
+                        <img src="/Resources/img/user_photo.jpg">
+                        <div class="myname-email">
+                            <label style="font-weight: bold; color: white; font-size: 16px;">Rateb Ghiasy</label>
+                            <a href="mailto:rateb.ghiasy2@gmail.com">rateb.ghiasy2@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="mysocial-media">
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                <g id="Group_60" data-name="Group 60" transform="translate(-604 -1504)">
+                                    <rect id="Rectangle_91" data-name="Rectangle 91" width="16" height="16"
+                                        transform="translate(604 1504)" fill="#4e2929" opacity="0" />
+                                    <path id="Path_61" data-name="Path 61"
+                                        d="M47.578,71.6a6.533,6.533,0,0,1-1.885.517A3.292,3.292,0,0,0,47.136,70.3a6.534,6.534,0,0,1-2.084.8,3.286,3.286,0,0,0-5.68,2.245,3.316,3.316,0,0,0,.086.748,9.317,9.317,0,0,1-6.767-3.43,3.291,3.291,0,0,0,1.017,4.382,3.276,3.276,0,0,1-1.488-.409v.041A3.284,3.284,0,0,0,34.855,77.9a3.329,3.329,0,0,1-.865.115,3.261,3.261,0,0,1-.618-.06,3.286,3.286,0,0,0,3.067,2.281,6.592,6.592,0,0,1-4.077,1.4,6.488,6.488,0,0,1-.784-.046,9.333,9.333,0,0,0,14.37-7.865c0-.142,0-.284-.01-.423A6.682,6.682,0,0,0,47.578,71.6Z"
+                                        transform="translate(572.422 1435.434)" />
+                                </g>
+                            </svg>
+                        </i>
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20">
+                                <g id="surface1" transform="translate(-12 -12)">
+                                    <path data-name="Path 62"
+                                        d="M17.556,12A5.561,5.561,0,0,0,12,17.556v8.889A5.561,5.561,0,0,0,17.556,32h8.889A5.561,5.561,0,0,0,32,26.444V17.556A5.561,5.561,0,0,0,26.444,12Zm0,2.222h8.889a3.34,3.34,0,0,1,3.333,3.333v8.889a3.34,3.34,0,0,1-3.333,3.333H17.556a3.34,3.34,0,0,1-3.333-3.333V17.556A3.34,3.34,0,0,1,17.556,14.222Zm10,1.111a1.111,1.111,0,1,0,1.111,1.111A1.113,1.113,0,0,0,27.556,15.333ZM22,16.444A5.556,5.556,0,1,0,27.556,22,5.561,5.561,0,0,0,22,16.444Zm0,2.222A3.333,3.333,0,1,1,18.667,22,3.34,3.34,0,0,1,22,18.667Z" />
+                                </g>
+                            </svg>
+                        </i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
