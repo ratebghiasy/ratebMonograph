@@ -21,12 +21,8 @@ body {
     justify-content: space-between;
 
     z-index: 1;
-    transition: ease-in-out 0.2s;
-}
 
-.header-scroll {
     background-color: white;
-    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
 }
 
 .header-logo {
@@ -105,137 +101,33 @@ body {
     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
 }
 
-.welcome-search-area {
+.pinned-page-intro-area {
     width: 100%;
     height: 120px;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    text-align: center;
 
     padding: 70px 80px 0px 80px;
     margin-bottom: 30px;
 }
 
-.welcome-banner {
+.pinned-page-title-description {
     width: auto;
     height: 100%;
 
-    display: flex;
-}
-
-.welcome-banner-title-description {
     display: grid;
-
-    margin-left: 20px;
 }
 
-#wtitle {
-    width: auto;
-    height: auto;
-
+#pinned-title {
     font-size: 24px;
     font-weight: bold;
     color: #4E4E4E;
 }
 
-#wdescription {
-    width: auto;
-    height: auto;
-
+#pinned-description {
     font-size: 14px;
     color: #B1B1B1;
-}
-
-.filter-search {
-    width: 300px;
-    height: 40px;
-
-    display: flex;
-}
-
-.filter-btn {
-    width: 40px;
-    height: 40px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-    margin-right: 10px;
-
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
-
-    transition: ease-in-out 0.3s;
-}
-
-.filter-btn i {
-    width: 18px;
-    height: 18px;
-    
-    fill: #255BAB;
-}
-
-.filter-btn:hover {
-    cursor: pointer;
-
-    box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.16);
-}
-
-.search {
-    width: 250px;
-    height: 40px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    padding: 2px 2px 2px 2px;
-
-    background-color: #F5F5F5;
-    border-radius: 10px;
-}
-
-.search-input {
-    width: 100%;
-    height: 100%;
-
-    border-style: none;
-    padding: 0px 10px 0px 12px;
-
-    outline: none;
-
-    background-color: rgba(255, 255, 255, 0);
-}
-
-.search-btn {
-    width: 80px;
-    height: 36px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
-
-    transition: ease-in-out 0.3s;
-}
-
-.search-btn i {
-    width: 18px;
-    height: 18px;
-
-    fill: #255BAB;
-}
-
-.search-btn:hover {
-    cursor: pointer;
-
-    box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.16);
 }
 
 .cards {
@@ -418,58 +310,6 @@ body {
     background-color: #255BAB;
     box-shadow: 0px 6px 12px 0px rgba(37, 91, 171, 0.3);
     fill: white;
-}
-
-.upload-btn-container {
-    width: 100%;
-    height: 50px;
-
-    display: flex;
-    justify-content: space-around;
-}
-
-.upload-btn {
-    width: 136px;
-    height: 50px;
-
-    display: flex;
-    align-items: center;
-
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    z-index: 96;
-
-    padding: 0px 30px 0px 30px;
-
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.16);
-    border: solid 1px #E5E5E5;
-
-    transition: ease-in-out 0.3s;
-    cursor: pointer;
-}
-
-.upload-btn:hover {
-    box-shadow: 0px 30px 60px 0px rgba(37, 91, 171, 0.7);
-}
-
-.upload-btn svg {
-    width: 18px;
-    height: 18px;
-
-    fill: #255BAB;
-
-    margin-right: 10px;
-}
-
-.upload-btn-text {
-    font-size: 14px;
-    font-weight: bold;
-    color: #255BAB;
-
-    cursor: pointer;
 }
 
 .see-more {

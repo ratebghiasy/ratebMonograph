@@ -1,0 +1,367 @@
+* {
+    padding: 0px;
+    margin: 0px;
+
+    box-sizing: border-box;
+
+    font-family: "Google Sans";
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+
+    z-index: 1;
+
+    background-color: white;
+}
+
+.header-logo {
+    width: 70px;
+    height: 100%;
+
+    text-align: center;
+
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+.header-logo:hover {
+    background-color: #F3F6FA;
+}
+
+.header-logo img {
+    width: 18.78px;
+    height: 25px;
+
+    margin-top: 22.5px;
+}
+
+.header-navigation {
+    width: 160px;
+    height: 100%;
+
+    display: flex;
+}
+
+.header-pages {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
+    fill: #D6D6D6;
+
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+.header-pages i {
+    display: block;
+
+    margin: auto
+}
+
+.header-pages:hover {
+    fill: #255BAB;
+    background-image: linear-gradient(white, #F3F6FA, white);
+}
+
+.header-profile-photo {
+    width: 70px;
+    height: 100%;
+
+    text-align: center;
+
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+.header-profile-photo:hover {
+    background-color: #F3F6FA;
+}
+
+.header-profile-photo img {
+    width: 30px;
+    height: 30px;
+
+    margin-top: 20px;
+
+    border-radius: 50%;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+}
+
+.upload-title-action-area {
+    width: 100%;
+    height: 130px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 70px 80px 0px 80px;
+    margin-bottom: 30px;
+}
+
+.upload-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4E4E4E;
+}
+
+.upload-action {
+    width: 318px;
+    height: 50px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.action-btn {
+    width: 150px;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    border-radius: 20px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+
+    font-size: 14px;
+    font-weight: bold;
+    color: #255BAB;
+
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+.action-btn label {
+    cursor: pointer;
+}
+
+#upload-action {
+    background-color: #255BAB;
+    color: white;
+}
+
+.action-btn:hover {
+    box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.16);
+}
+
+.main {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    gap: 20px;
+
+    padding: 0px 80px 0px 80px;
+}
+
+.info-column {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+}
+
+.small-title {
+    width: auto;
+    height: 20px;
+
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    font-weight: bold;
+    color: #4E4E4E;
+}
+
+.small-input {
+    width: 100%;
+    height: 50px;
+
+    font-size: 14px;
+    color: black;
+
+    padding: 0px 12px 0px 12px;
+    margin-bottom: 10px;
+
+    border: 1px solid #E5E5E5;
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.large-input {
+    width: 100%;
+    height: 200px;
+    
+    resize: none;
+
+    font-size: 14px;
+    color: black;
+
+    padding: 10px 12px 0px 12px;
+    margin-bottom: 10px;
+
+    border: 1px solid #E5E5E5;
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    font-size: 20px;
+    font-weight: bold;
+    color: #4E4E4E;
+
+    padding: 3px 0px 0px 40px;
+    margin-bottom: 10px;
+    
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container input {
+    height: 0;
+    width: 0;
+
+    position: absolute;
+    opacity: 0;
+
+    cursor: pointer;
+}
+
+.checkmark {
+    height: 30px;
+    width: 30px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: #F5F5F5;
+    border: 1px solid #E5E5E5;
+    border-radius: 10px;
+}
+
+.container:hover .checkmark {
+    background-color: #F6F6F6;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: #255BAB;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    width: 6px;
+    height: 10px;
+
+    left: 10px;
+    top: 6px;
+    
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.upload-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+    color: transparent;
+}
+
+.upload-file-input::before {
+    width: 362px;
+    height: 50px;
+    content: 'Upload project files (ZIP)';
+
+    display: flex;
+    align-items: center;
+    text-align: left;
+    
+    font-weight: bold;
+    font-size: 20px;
+    color: #255BAB;
+
+    padding: 0px 12px 0px 12px;
+
+    background-color: white;
+    border: 1px solid #E5E5E5;
+    border-radius: 10px;
+
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+.upload-file-input:hover::before {
+    background-color: #F6F6F6;
+}
+
+#for-hiding-unwanted-text {
+    width: 100%;
+    height: 22px;
+    margin-top: -21px;
+    background-color: white;
+}
+
+#size-limit-text {
+    margin-top: -12px;
+}
+
+.upload-screenshot-input::before {
+    width: 362px;
+    height: 220px;
+    content: 'Cover photo';
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: left;
+    
+    font-weight: bold;
+    font-size: 20px;
+    color: #255BAB;
+
+    padding: 0px 12px 0px 12px;
+
+    background: linear-gradient(top, #f9f9f9, #e3e3e3);
+    border: 1px solid #E5E5E5;
+    border-radius: 10px;
+
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+.upload-screenshot-input:hover::before {
+    background-color: #F6F6F6;
+}
